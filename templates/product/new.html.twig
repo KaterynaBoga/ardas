@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Новый продукт{% endblock %}
+
+{% block body %}
+    <h1>Создать новый продукт</h1>
+
+    {{ include('product/_form.html.twig') }}
+
+    <a style="margin-top: 5px" href="{{ path('product_index') }}" class="btn btn-outline-secondary">Вернуться к списку товаров</a>
+{% endblock %}
